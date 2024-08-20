@@ -1,0 +1,117 @@
+.footerBox{
+    margin-top: 10vmax;
+    background-color: rgb(49, 49, 49);
+    color: rgb(255, 255, 255);
+    display: flex;
+    /* flex-direction: row; */
+    /* width: 99.vw; */
+
+
+}
+
+.outerContainer{
+    display: flex;
+    margin: 10px 0;
+    /* border: 2px solid black; */
+    /* justify-content: space-between; */
+    width: 100%;
+    padding: 2rem;
+
+}
+.div1{
+    font-size: 30px;
+
+    text-decoration: underline;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+    >h4{
+        text-align: center;
+    }
+}
+.iconBox{
+    margin-top: 1rem;
+    /* font-size: 2rem; */
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1rem;
+    width: 100%;
+
+}
+.div2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 2px solid black; */
+
+    >h1{
+        font-size: 60px;
+        margin-bottom: 2vmax;
+    }
+    >p{
+        max-width: 60%;
+        margin: 1vmax auto;
+        /* border: 2px solid black; */
+        font-size: 20px;
+    }
+}
+
+
+.div3{
+    text-decoration: underline;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+
+}
+.icons{
+    font-size: 45px;
+}
+
+.icons:hover{
+    color: rgba(255, 255, 255, 0.692);
+    transition: ease-in-out 200ms;
+}
+@media screen and (max-width: 600px){
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .div1, .div2, .div3{
+        width: 100%;
+        margin: 20px 0;
+        
+    }
+    .div1{
+        font-size: 18px;
+    }
+    .icons{
+        font-size: 30px;
+    }
+    .div2{
+
+        >h1{
+            font-size: 30px;
+            margin-bottom: 6px;
+        }
+        >p{
+            font-size: 12px;
+        }
+    }
+    .div3{
+        font-size: 18px;
+
+    }
+    .iconBox{
+        width: 60%;
+    }
+    
+}

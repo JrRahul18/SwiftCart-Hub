@@ -1,0 +1,32 @@
+.MuiDataGrid-columnHeaderTitle {
+    font-size: 14px;
+    font-family: var(--heading-font-1);
+    font-weight: 600;
+    color: white;
+  }
+  
+  .MuiDataGrid-columnHeader {
+    background-color: var(--button-color-hover);
+    margin: 0;
+    padding: 0;
+  }
+  .MuiDataGrid-columnSeparator {
+    display: none !important;
+  }
+  
+  .MuiSvgIcon-root {
+    font-size: 20px !important;
+  }
+  
+  
+  .MuiDataGrid-menuIcon{
+      /* padding: 0 !important;
+      margin: 0 !important; */
+      width: 10% !important;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .MuiDataGrid-columnHeaderTitle{
+          font-size: 14px;
+      }
+  }

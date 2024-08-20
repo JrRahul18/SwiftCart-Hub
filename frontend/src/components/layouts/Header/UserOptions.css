@@ -1,0 +1,27 @@
+.MuiSpeedDial-root {
+  /* border: 1px solid green !important; */
+  position: fixed !important;
+  top: 0 !important;
+}
+
+.MuiFab-root {
+  box-shadow: 0 0 20px 6.5px rgba(171, 171, 171, 0.68) !important;
+  border: 2px solid rgb(202, 202, 202);
+}
+
+.MuiBackdrop-root {
+  z-index: 1;
+}
+/* 
+.MuiButtonBase-root
+  .MuiFab-root
+  .MuiFab-circular
+  .MuiFab-sizeLarge
+  .MuiFab-primary
+  .MuiFab-root
+  .MuiFab-circular
+  .MuiFab-sizeLarge
+  .MuiFab-primary
+  .MuiSpeedDial-fab
+  .css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+} */

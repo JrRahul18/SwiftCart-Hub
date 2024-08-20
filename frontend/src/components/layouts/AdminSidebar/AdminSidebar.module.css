@@ -1,0 +1,168 @@
+.sidebarBox {
+  z-index: 99;
+  height: 50vh;
+  /* width: 20%;
+    max-width: 200px; */
+  overflow-y: auto;
+  margin: auto 0;
+  /* border: 1px solid gray; */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 30vh;
+  > .sidebarHandlerIconBox {
+    cursor: pointer;
+    position: fixed;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    /* border: 2px solid gray; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    z-index: 99;
+    background-color: white;
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    > .sidebarHandlerIcon {
+      /* border: 1px solid green; */
+      transition: ease-in-out 200ms;
+      color: gray;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  > .sidebar {
+    overflow-x: hidden;
+    transition: all 300ms ease-in-out;
+    background-color: rgb(255, 255, 255);
+    margin-top: 8vh;
+    margin-right: 10px;
+    width: 250px;
+    border: 2px solid rgb(233, 233, 233);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+    > .dashboardIconBox,
+    > .productsIconBox,
+    > .orderIconBox,
+    > .usersIconBox,
+    > .reviewsIconBox {
+      width: 250px;
+      /* border: 2px solid green; */
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > a {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: center; */
+        padding: 5px 0;
+        text-decoration: none;
+        color: rgb(110, 110, 110);
+
+        /* border: 1px solid green; */
+        padding-left: 30px;
+        transition: all ease-in-out 200ms;
+
+        > .dashboardIcon,
+        > .orderIcon,
+        > .userIcon,
+        > .reviewIcon {
+          font-size: 30px !important;
+          transition: all ease-in-out 200ms;
+
+          margin-right: 10px;
+          color: rgb(110, 110, 110);
+        }
+
+        &:hover {
+          > .dashboardIcon,
+          > .orderIcon,
+          > .userIcon,
+          > .reviewIcon {
+            transition: all ease-in-out 200ms;
+
+            color: black;
+          }
+
+          background-color: rgb(236, 236, 236);
+          transition: all ease-in-out 200ms;
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+
+    > .productsIconBox {
+      > a {
+        a {
+          margin: 10px 0;
+          /* border: 2px solid green; */
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          text-decoration: none;
+          width: 100%;
+          transition: all ease-in-out 200ms;
+
+          /* color: black; */
+
+          > .createTag,
+          > .allTag {
+            font-size: 20px !important;
+            color: rgb(66, 66, 66);
+          }
+
+          > .allIcon,
+          > .addIcon {
+            font-size: 25px !important;
+            color: rgb(88, 88, 88);
+          }
+
+          &:hover {
+            background-color: rgb(236, 236, 236) !important;
+            transition: all ease-in-out 200ms;
+
+            > .createTag,
+            > .allTag {
+              transition: all ease-in-out 200ms;
+              color: rgb(0, 0, 0) !important;
+            }
+            > .allIcon,
+            > .addIcon {
+              transition: all ease-in-out 200ms;
+
+              color: black !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar.disable {
+  width: 0 !important;
+  transition: all 300ms ease-in-out;
+  border: 0px solid green !important;
+  /* border: none !important; */
+}
+
+.active {
+  width: 100%;
+}
+.rotate {
+  color: rgb(65, 64, 64) !important;
+
+  transition: ease-in-out 300ms;
+  transform: rotate(180deg);
+}

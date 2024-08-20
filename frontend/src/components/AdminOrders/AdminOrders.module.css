@@ -1,0 +1,172 @@
+.mainPage {
+  width: 100%;
+  min-height: 100vh;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+
+  .outerContainer {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+
+    > .headingBox {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+
+      > .heading {
+        font-size: 35px;
+        font-family: var(--heading-font-1);
+        color: rgb(87, 87, 87);
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+    }
+    > .horizontalLine {
+      height: 3px;
+      width: 60%;
+      background-color: rgb(75, 75, 75);
+      margin-bottom: 30px;
+    }
+
+    > .orderBox {
+      background-color: rgb(247, 247, 247);
+
+      display: flex;
+      min-height: 60vh;
+      position: relative;
+      flex-direction: column;
+      /* border: 1px solid green; */
+      width: 95%;
+      max-width: 1600px;
+      /* z-index: 1; */
+      > .productTable {
+        /* display: flex;
+          flex-direction: column; */
+        /* width: 100%; */
+        margin: 20px 1vw;
+        /* z-index: 1; */
+        /* border: 1px solid green; */
+      }
+
+      > .subheadingContainer {
+        /* width: 90%; */
+        margin: 20px 0;
+        margin-bottom: 0;
+        background-color: rgb(90, 90, 90);
+        border: 2px solid gray;
+
+        > .subheading {
+          font-size: 20px;
+          font-family: var(--heading-font-1);
+          font-weight: 600;
+          text-align: center;
+          color: rgb(78, 78, 78);
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.idColumn {
+  font-size: 13px;
+  text-decoration: underline;
+}
+.nameColumn {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--heading-font-1);
+}
+.itemsQuantityColumn {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  /* font-weight: 600; */
+}
+.amountColumn {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--heading-font-1);
+}
+.actionsColumn {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  > .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px solid green; */
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease-in-out 400ms;
+    padding: 3px;
+
+    > .editOrderIcon {
+      font-size: 30px !important;
+      color: rgb(151, 151, 151);
+
+      transition: all ease-in-out 400ms;
+    }
+
+    &:hover {
+      > .editOrderIcon {
+        /* color: var(--button-color); */
+        color: rgb(48, 48, 255);
+        transition: all ease-in-out 400ms;
+        transition: all ease-in-out 400ms;
+      }
+    }
+  }
+  > .button {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 3px;
+    transition: all ease-in-out 400ms;
+
+    border: none;
+
+    > .deleteOrderIcon {
+      font-size: 30px !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgb(160, 158, 158);
+      transition: all ease-in-out 400ms;
+    }
+
+    &:hover {
+      > .deleteOrderIcon {
+        /* color: var(--button-color); */
+        transition: all ease-in-out 400ms;
+        color: rgb(189, 1, 1);
+      }
+    }
+  }
+}
+
+.processing {
+  color: rgb(161, 20, 20);
+  font-size: 15px;
+  font-weight: 600;
+}
+.delivered {
+  color: green;
+  font-size: 15px;
+  font-weight: 600;
+}

@@ -1,0 +1,634 @@
+.mainPage {
+  width: 100%;
+  min-height: 100vh;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+
+  .outerContainer {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+
+    > .headingBox {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+
+      > .heading {
+        font-size: 35px;
+        font-family: var(--heading-font-1);
+        color: rgb(87, 87, 87);
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+    }
+    > .horizontalLine {
+      height: 3px;
+      width: 60%;
+      background-color: rgb(75, 75, 75);
+      margin-bottom: 30px;
+    }
+    > .editOrderStatusBox {
+      margin: 5vh 0;
+      margin-bottom: 0;
+      width: 95%;
+      border: 1px solid blue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > .productForm {
+        /* position: absolute; */
+
+        width: 90%;
+
+        border-radius: 15px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100px;
+        background-color: rgb(248, 240, 253);
+        padding: 30px 0;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        border: 2px solid rgb(228, 228, 228);
+        /* transform:  translateY(-100%) translateX(-100vmax); */
+        .headingBox {
+          margin-bottom: 10px;
+          .heading {
+            font-family: var(--heading-font-1);
+            color: var(--button-color-2-hover);
+            font-weight: 400;
+          }
+        }
+        > .categoryInputBox {
+          /* border: 1px solid green; */
+          width: 80%;
+          min-width: 150px;
+
+          margin: 10px 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          > .categoryIcon {
+            font-size: 30px;
+            color: rgb(77, 77, 77);
+            /* margin-right: 8px; */
+          }
+
+          > .categoryInput {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 0 1.3vw;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid rgb(156, 151, 151);
+            background-color: transparent;
+            font-family: var(--heading-font-1);
+            &:focus {
+              border-bottom: 2px solid rgb(90, 87, 87);
+            }
+          }
+          > .categoryInput {
+            > .categoryOptions {
+              background-color: rgb(233, 233, 233);
+            }
+          }
+        }
+
+        .createProductButtonBox {
+          .createProductButton {
+            /* background-color: ; */
+            background-color: var(--button-color);
+            color: white;
+            height: 40px;
+            font-size: 15px;
+            width: 250px;
+            border: none;
+            border-radius: 40px;
+            transition: 200ms ease-in-out;
+            cursor: pointer;
+            margin: 10px 0;
+            &:hover {
+              background-color: var(--button-color-hover);
+            }
+          }
+        }
+        > .forgetPasswordBox {
+          /* border: 2px solid green; */
+          font-size: 12px;
+        }
+      }
+    }
+
+    > .updateOrderBox {
+      margin: 5vh 0;
+      border: 1px solid blue;
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 1600px;
+
+      > .shippingAndCartDataBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid gray; */
+        width: 70%;
+        margin-right: 5vw;
+
+        > .orderIdBox {
+          /* border: 1px solid green; */
+          width: 95%;
+          display: flex;
+          align-items: center;
+          overflow-x: auto;
+
+          > .subheading {
+            font-size: 16px;
+            color: rgb(92, 92, 92);
+          }
+          > .orderId {
+            font-size: 18px;
+            margin-left: 5px;
+            font-family: var(--heading-font-1);
+            font-weight: 500;
+            color: var(--button-color);
+            > p {
+              word-wrap: break-word !important;
+              white-space: "normal" !important;
+            }
+            /* color: #4b4b4b; */
+          }
+        }
+
+        > .shippingAreaBox {
+          display: flex;
+          flex-direction: column;
+          border: 2px solid rgb(184, 184, 184);
+          border-radius: 10px;
+          background-image: linear-gradient(
+            to right top,
+            #c6c6c6,
+            #cecece,
+            #d6d6d6,
+            #dfdfdf,
+            #e7e7e7
+          );
+          width: 95%;
+          max-width: 600px;
+          margin: 20px 0;
+          min-height: 200px;
+
+          > .subheading {
+            font-size: 22px;
+            font-weight: 600;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+              "Lucida Sans", Arial, sans-serif;
+            /* width: 100%; */
+            margin: 10px 1vw;
+            color: var(--button-color-2-hover);
+          }
+          > .nameBox,
+          > .phoneNumberBox,
+          > .addressBox,
+          > .pincodeBox {
+            display: flex;
+            align-items: center;
+            /* border: 1px solid green; */
+            margin: 5px 1vw;
+
+            > .nameHeading,
+            > .phoneNumberHeading,
+            > .addressHeading,
+            > .pincodeHeading {
+              font-size: 14px;
+              width: 20%;
+              text-align: end;
+              margin-right: 10px;
+              color: rgb(82, 82, 82);
+            }
+            > .name,
+            > .phoneNumber,
+            > .address,
+            > .pincode {
+              font-size: 16px;
+              width: 80%;
+              font-weight: 500;
+            }
+          }
+        }
+        > .cartDataBox {
+          display: flex;
+          flex-direction: column;
+          /* border: 1px solid green; */
+          width: 100%;
+          max-width: 1000px;
+          > .subheading {
+            font-size: 30px;
+            font-weight: 500;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+              "Lucida Sans", Arial, sans-serif;
+            /* width: 100%; */
+            margin: 10px 1vw;
+            color: var(--button-color-2-hover);
+          }
+
+          > .dataBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+            overflow-y: auto;
+            border: 2px solid gray;
+            border-radius: 10px;
+            /* margin-top: 10px; */
+            box-sizing: border-box;
+            > .itemBox {
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              max-width: 900px;
+              padding: 0 0.5vw;
+              gap: 1vw;
+              margin: 10px 0;
+              border: 3px solid rgb(202, 202, 202);
+              border-radius: 15px;
+              align-items: center;
+              > .productCard {
+                display: flex;
+                flex-direction: row;
+                /* align-items: center; */
+                width: 80%;
+                gap: 2%;
+                box-sizing: border-box;
+                font-family: var(--heading-font-1);
+                overflow-x: auto;
+                /* border: 1px solid green; */
+                padding: 8px 0;
+                > .itemImage {
+                  /* border: 1px solid green; */
+                  width: 80px;
+                  height: 80px;
+                  object-fit: contain;
+                }
+                > .infoBox {
+                  display: flex;
+                  flex-direction: column;
+                  > .itemName {
+                    font-size: 17px;
+                    text-decoration: none;
+                    color: rgb(37, 37, 37);
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                  }
+                  > .priceBox,
+                  > .quantityBox {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 1px 0;
+                    /* border: 1px solid green; */
+                    > .priceHeading,
+                    > .quantityHeading {
+                      margin-right: 4px;
+                      font-size: 13px;
+                      font-weight: 600;
+                      color: rgb(114, 114, 114);
+                    }
+
+                    > .itemPrice,
+                    > .itemQuantity {
+                      font-size: 14px;
+                      font-weight: 600;
+                      color: rgb(83, 83, 83);
+                    }
+                  }
+                }
+              }
+
+              > .quantityAndTotal {
+                display: flex;
+                width: 20%;
+                flex-direction: column;
+                /* border: 1px solid green; */
+                text-align: center;
+
+                > .itemTotalPrice {
+                  font-size: 17px;
+                  color: rgb(34, 34, 34);
+                  font-weight: 600;
+                }
+                > .quantityAndPrice {
+                  font-size: 13px;
+                  font-weight: 600;
+                  color: rgb(114, 114, 114);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      > .orderSummaryAndPaymentBox {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid gray; */
+        width: 30%;
+        max-width: 400px;
+        > .paymentStatusBox,
+        > .orderStatusBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* border: 2px solid rgb(0, 0, 0); */
+          /* background-color: rgb(243, 243, 243); */
+          border-radius: 5px;
+          margin: 20px 0;
+          margin-bottom: 0;
+
+          > .subheading {
+            font-family: var(--heading-font-1);
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: rgb(83, 82, 82);
+          }
+          > .successIcon,
+          > .failIcon,
+          > .warningIcon {
+            font-size: 40px !important;
+            text-align: center;
+          }
+          > .successIcon {
+            color: green;
+          }
+          > .failIcon {
+            color: rgb(243, 5, 5);
+          }
+          > .warningIcon {
+            color: rgb(219, 100, 21);
+          }
+          > .successStatus,
+          > .failStatus,
+          > .warningStatus {
+            font-size: 17px;
+            margin-bottom: 5px;
+          }
+          > .successStatus {
+            color: green;
+          }
+          > .failStatus {
+            color: rgb(167, 0, 0);
+          }
+          > .warningStatus {
+            color: rgb(121, 57, 15);
+          }
+        }
+        > .orderSummaryBox {
+          /* width: 100%; */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 2px solid rgb(190, 190, 190);
+          background-color: rgb(243, 243, 243);
+          border-radius: 10px;
+          margin: 50px 0;
+          margin-bottom: 15px;
+          min-height: 180px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+
+          > .subheading {
+            font-size: 22px;
+            font-weight: 600;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+              "Lucida Sans", Arial, sans-serif;
+            text-align: center;
+            margin: 10px 0;
+            /* margin-bottom: 30px; */
+            color: var(--button-color-2-hover);
+          }
+          > .horizontalLine {
+            width: 80%;
+            margin-bottom: 20px;
+          }
+
+          > .subtotalBox,
+          > .shippingChargesBox,
+          > .taxBox {
+            display: flex;
+            align-items: center;
+            gap: 5%;
+            /* border: 1px solid green; */
+            margin: 5px 1vw;
+            width: 100%;
+
+            > .shippingChargesHeading,
+            > .taxHeading,
+            > .subtotalHeading {
+              width: 50%;
+              font-size: 14px;
+              font-weight: 600;
+              color: rgb(104, 104, 104);
+              text-align: right;
+            }
+            > .subtotal,
+            > .shippingCharges,
+            > .tax {
+              width: 50%;
+              font-size: 17px;
+              font-weight: 600;
+              color: rgb(61, 61, 61);
+            }
+          }
+        }
+
+        > .totalBox {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          /* border: 1px solid green; */
+          margin: 5px 1vw;
+          gap: 5%;
+          margin-bottom: 30px;
+
+          > .totalHeading {
+            width: 50%;
+            font-size: 16px;
+            font-weight: 700;
+            color: rgb(82, 82, 82);
+            text-align: right;
+          }
+
+          > .total {
+            width: 50%;
+            font-size: 21px;
+            font-weight: 600;
+            color: rgb(34, 34, 34);
+          }
+        }
+        > .paymentButtonBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 5px 1vw;
+          /* border: 1px solid green; */
+          > .paymentButton {
+            /* background-color: ; */
+            background-color: var(--button-color);
+            color: white;
+            height: 40px;
+            font-size: 14px;
+            width: 160px;
+            border: none;
+            border-radius: 40px;
+            transition: 200ms ease-in-out;
+            cursor: pointer;
+            margin: 10px 0;
+            &:hover {
+              background-color: var(--button-color-hover);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainPage {
+    > .outerContainer {
+      > .headingBox {
+        > .heading {
+          font-size: 30px;
+        }
+      }
+      > .updateOrderBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > .shippingAndCartDataBox {
+          width: 100%;
+          order: 2;
+          margin: 0;
+          padding: 0;
+
+          > .shippingAreaBox {
+            width: 100%;
+            max-width: 320px;
+            margin: 5px 0;
+
+            > .nameBox,
+            > .phoneNumberBox,
+            > .addressBox,
+            > .pincodeBox {
+              margin: 3px 1vw;
+
+              > .nameHeading,
+              > .phoneNumberHeading,
+              > .addressHeading,
+              > .pincodeHeading {
+                width: 30%;
+                font-size: 12px;
+              }
+
+              > .name,
+              > .phoneNumber,
+              > .address,
+              > .pincode {
+                width: 70%;
+                font-size: 14px;
+              }
+            }
+          }
+          > .cartDataBox {
+            > .dataBox {
+              > .itemBox {
+                > .productCard {
+                  > .itemImage {
+                    width: 70px;
+                  }
+
+                  > .infoBox {
+                    > .itemName {
+                      font-size: 16px;
+                    }
+                    > .priceBox,
+                    > .quantityBox {
+                      > .priceHeading,
+                      > .quantityHeading {
+                        font-size: 12px;
+                      }
+
+                      > .itemPrice,
+                      > .itemQuantity {
+                        font-size: 13px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        > .orderSummaryAndPaymentBox {
+          width: 100%;
+          order: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          margin-bottom: 10px;
+          padding: 0;
+
+          > .paymentStatusBox,
+          > .orderStatusBox {
+            max-width: 200px;
+            width: 100%;
+          }
+
+          > .orderSummaryBox {
+            max-width: 300px;
+            width: 100%;
+          }
+
+          > .totalBox {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.greenBg {
+  background-color: rgba(96, 238, 96, 0.377);
+  border: 2px solid rgb(134, 226, 134);
+}
+
+.redBg {
+  background-color: rgba(255, 159, 159, 0.781);
+  border: 2px solid rgb(231, 142, 142);
+}
+
+.yellowBg {
+  background-color: rgba(255, 209, 182, 0.616);
+  border: 2px solid rgb(229, 192, 157);
+}

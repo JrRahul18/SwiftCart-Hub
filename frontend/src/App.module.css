@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --button-color: rgb(69, 69, 160);
+    --button-color-hover:  rgb(88, 88, 192);
+    --button-color-2: rgb(49, 49, 49);
+    --button-color-2-hover: rgb(85, 85, 85);
+    --heading-font-1: "Noto Sans", sans-serif;
+
+}
+.appBox{
+    position: relative;
+}
+body{
+    /* min-height: 100vh; */
+    font-family: 'Roboto';
+    /* display: flex;
+    flex-direction: column; */
+
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 25px !important;
+        /* margin-bottom: 10px !important; */
+    }
+    hr{
+        height: 1px !important;
+        margin-bottom: 20px !important;
+    }
+}

@@ -1,0 +1,17 @@
+::file-selector-button {
+  background-color: var(--button-color);
+  color: white;
+  height: 35px;
+  font-size: 15px;
+  width: 120px;
+  border: none;
+  border-radius: 40px;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+  margin: 10px 0;
+  margin-right: 20px;
+}
+
+::file-selector-button:hover {
+  background-color: var(--button-color-hover);
+}

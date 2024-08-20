@@ -1,0 +1,241 @@
+.mainPage {
+  width: 100%;
+  min-height: 100vh;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+
+  > .outerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-top: 10vh;
+    > .headingBox {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+
+      > .heading {
+        font-size: 35px;
+        font-family: var(--heading-font-1);
+        color: rgb(87, 87, 87);
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+    }
+    > .horizontalLine {
+      height: 3px;
+      width: 60%;
+      background-color: rgb(75, 75, 75);
+      margin-bottom: 30px;
+    }
+
+    > .dashboardBox {
+      width: 95%;
+      /* border: 1px solid green; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > .priceInformationBox {
+        width: 95%;
+        border: 2px solid rgb(204, 204, 204);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        min-height: 150px;
+        box-sizing: border-box;
+        padding: 8px 20px;
+        background-color: rgb(108, 108, 230);
+        margin: 10px 10vw;
+        margin-bottom: 50px;
+
+        > .totalAmountHeading {
+          font-size: 25px;
+          font-family: var(--heading-font-1);
+          margin-right: 10px;
+          color: rgb(236, 236, 236);
+        }
+        > .totalAmount {
+          font-size: 40px;
+          font-weight: 500;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          color: rgb(255, 255, 255);
+        }
+      }
+
+      > .adminInformationBox {
+        border: 3px solid rgb(221, 240, 217);
+        background-color: rgba(142, 231, 142, 0.185);
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border-radius: 10px;
+        display: flex;
+        width: 95%;
+        /* align-items: center; */
+        justify-content: center;
+        gap: 10vw;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        margin-bottom: 80px;
+        padding: 30px 0;
+
+        > .productBox,
+        > .orderBox,
+        > .userBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          /* border: 2px solid gray; */
+          width: 180px;
+          height: 180px;
+          border-radius: 5px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+            rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          > a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 80%;
+            /* border: 1px solid green; */
+            text-decoration: none;
+            > .productTitle,
+            > .orderTitle,
+            > .userTitle {
+              font-size: 20px;
+              font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                "Helvetica Neue", sans-serif;
+              font-weight: 500;
+              color: rgb(88, 88, 88);
+            }
+            > .products,
+            > .orders,
+            > .users {
+              font-family: var(--heading-font-1);
+              font-size: 28px;
+              font-weight: 600;
+              color: rgb(85, 85, 85);
+            }
+          }
+        }
+
+        > .productBox {
+          background-color: rgb(199, 193, 236);
+        }
+        > .orderBox {
+          background-color: rgb(255, 176, 176);
+        }
+        > .userBox {
+          background-color: rgb(255, 255, 114);
+        }
+      }
+
+      > .chartContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        /* border: 1px solid green; */
+        border-radius: 10px;
+        background-color: rgba(236, 236, 236, 0.432);
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+          rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+          rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        margin: 30px 0;
+        > .chartHeadingBox {
+          display: flex;
+          flex-direction: column;
+          /* border: 1px solid green; */
+          width: 100%;
+          align-items: center;
+          margin: 40px 0;
+          margin-bottom: 30px;
+
+          > .chartHeading {
+            font-size: 30px;
+            font-weight: 600;
+            color: rgb(114, 114, 114);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+          }
+        }
+        > .chartBox {
+          display: flex;
+          flex-direction: column;
+          /* align-items: center;
+          border: 1px solid green; */
+          width: 90%;
+          max-width: 1000px;
+          object-fit: contain;
+          margin: 10px 0;
+          margin-bottom: 40px;
+        }
+      }
+
+      > .doughnutContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        /* border: 1px solid green; */
+        margin: 30px 0;
+        border-radius: 10px;
+        /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+          rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+          rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        background-color: rgba(236, 236, 236, 0.432);
+
+        > .chartHeadingBox {
+          display: flex;
+          flex-direction: column;
+          /* border: 1px solid green; */
+          width: 100%;
+          align-items: center;
+          margin: 40px 0;
+          margin-bottom: 30px;
+
+          > .chartHeading {
+            font-size: 30px;
+            font-weight: 600;
+            color: rgb(114, 114, 114);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+          }
+        }
+        > .doughnutBox {
+          display: flex;
+          flex-direction: column;
+          /* border: 1px solid green; */
+          width: 90%;
+          max-width: 500px;
+          object-fit: contain;
+          align-items: center;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chartBox {
+    width: 20%;
+    height: 300px;
+  }
+}

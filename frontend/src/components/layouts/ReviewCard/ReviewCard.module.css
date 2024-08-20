@@ -1,0 +1,50 @@
+.reviewCard {
+  border: 1px solid rgb(161, 161, 161);
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  margin: 20px 2vw;
+  border-radius: 10px;
+  background-color: rgb(230, 224, 224);
+  min-height: 100px;
+  padding: 20px 0;
+  .pfpBox {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(133, 130, 130);
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px 1vw;
+    background-color: white;
+    .userImage {
+      width: 100%;
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+  .reviewData {
+    width: 100%;
+    .userName {
+      font-weight: bold;
+      font-size: 16px;
+      color: rgb(78, 78, 78);
+    }
+    .userRating {
+      margin-top: 0;
+      /* border: 1px solid green; */
+    }
+    .commentBox {
+      .userComment {
+        font-size: 15px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.ratingStars{
+    /* border: 1px solid gray; */
+    padding: 0 !important;
+    margin: 0 !important;
+}

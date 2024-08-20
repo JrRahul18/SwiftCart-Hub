@@ -1,0 +1,301 @@
+.outerContainer {
+  margin-top: 150px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid green; */
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  .loginSignupBox {
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    width: 90%;
+    max-width: 1300px;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+    .toggleBox {
+      border: 2px solid rgb(229, 230, 229);
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      background-color: var(--button-color);
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      min-width: 350px;
+      max-width: 800px;
+      min-height: 60px;
+      /* align-items: center; */
+      justify-content: center;
+      gap: 2vw;
+      > p,
+      button {
+        height: 45px;
+        /* margin: 3px 0; */
+      }
+      > p {
+        font-size: 22px;
+        font-family: var(--heading-font-1);
+        /* color: var(--button-color-2-hover); */
+        color: rgba(255, 255, 255, 0.671);
+
+        font-weight: 600;
+        &:hover {
+          color: white;
+        }
+      }
+      .loginFormButton,
+      .signupFormButton {
+        cursor: pointer;
+        padding: 4px;
+      }
+    }
+    > .formBox {
+      /* border: 1px solid gray; */
+      width: 80%;
+      min-width: 350px;
+      max-width: 800px;
+      margin: 50px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* overflow: hidden; */
+      position: relative;
+      /* min-height: 500px; */
+
+
+      > .loginForm {
+        /* position: absolute; */
+        width: 90%;
+        border: 1px solid green;
+        border-radius: 15px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+        background-color: rgb(248, 240, 253);
+        padding: 30px 0;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        border: 2px solid rgb(228, 228, 228);
+
+
+        .headingBox {
+          .heading {
+            font-family: var(--heading-font-1);
+            color: var(--button-color-2-hover);
+            font-weight: 400;
+          }
+        }
+
+        > .emailInputBox,
+        > .passwordInputBox {
+          /* border: 1px solid green; */
+          width: 60%;
+          min-width: 150px;
+          margin: 10px 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          > .emailIcon,
+          > .passwordIcon {
+            font-size: 35px;
+          }
+
+          > .emailInput,
+          > .passwordInput {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 0 1.3vw;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid rgb(156, 151, 151);
+            background-color: transparent;
+
+            &:focus {
+              border-bottom: 2px solid rgb(90, 87, 87);
+            }
+          }
+        }
+        .loginButtonBox {
+          .loginButton {
+            /* background-color: ; */
+            background-color: var(--button-color);
+            color: white;
+            height: 35px;
+            font-size: 15px;
+            width: 100px;
+            border: none;
+            border-radius: 40px;
+            transition: 200ms ease-in-out;
+            cursor: pointer;
+            margin: 10px 0;
+            &:hover {
+              background-color: var(--button-color-hover);
+            }
+          }
+        }
+        > .forgetPasswordBox {
+          /* border: 2px solid green; */
+          font-size: 12px;
+        }
+      }
+      > .signupForm {
+        /* position: absolute; */
+
+        width: 90%;
+        border-radius: 15px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+        background-color: rgb(248, 240, 253);
+        padding: 30px 0;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        border: 2px solid rgb(228, 228, 228);
+
+        /* transform:  translateY(-100%) translateX(-100vmax); */
+        .headingBox {
+          .heading {
+            font-family: var(--heading-font-1);
+            color: var(--button-color-2-hover);
+            font-weight: 400;
+          }
+        }
+
+        > .emailInputBox,
+        > .nameInputBox,
+        > .imageInputBox,
+        > .passwordInputBox {
+          /* border: 1px solid green; */
+          width: 60%;
+          min-width: 150px;
+
+          margin: 10px 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          > .emailIcon,
+          > .nameIcon,
+          > .imageIcon,
+          > .passwordIcon {
+            font-size: 35px;
+          }
+
+          > .emailInput,
+          > .nameInput,
+          > .imageInput,
+          > .passwordInput {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 0 1.3vw;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid rgb(156, 151, 151);
+            background-color: transparent;
+
+            &:focus {
+              border-bottom: 2px solid rgb(90, 87, 87);
+            }
+          }
+
+          > .imageInput{
+            border: none;
+            /* font-size: 14px; */
+            &:focus{
+              border: none;
+            }
+          }
+
+          > .imageInput::file-selector-button{
+            cursor: pointer;
+          }
+        }
+        > .imageInputBox{
+          .profileImageBox{
+            width: 100px ;
+            height: auto;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .profileImage{
+              width: 100%;
+              height: 100%;
+              object-fit:  co;
+            }
+          }
+        }
+        .signupButtonBox {
+          .signupButton {
+            /* background-color: ; */
+            background-color: var(--button-color);
+            color: white;
+            height: 35px;
+            font-size: 15px;
+            width: 100px;
+            border: none;
+            border-radius: 40px;
+            transition: 200ms ease-in-out;
+            cursor: pointer;
+            margin: 10px 0;
+            &:hover {
+              background-color: var(--button-color-hover);
+            }
+          }
+        }
+        > .forgetPasswordBox {
+          /* border: 2px solid green; */
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+  transform: translateX(100%);
+}
+
+.active {
+  color: white !important;
+  border-bottom: 2px solid white;
+}
+.hide{
+  display: none !important;
+}
+
+.show{
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .outerContainer{
+    >.loginSignupBox{
+      width: 95%;
+    }
+  }
+}

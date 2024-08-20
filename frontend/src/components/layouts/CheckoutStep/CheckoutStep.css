@@ -1,0 +1,26 @@
+/* .MuiStepConnector-line {
+  display: none !important;
+} */
+.MuiStepConnector-root {
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.384);
+}
+
+/* .MuiStepConnector-active,
+.MuiStepConnector-completed {
+    background-color: purple;
+} */
+
+.stepLabel{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: var(--heading-font-1) !important;
+}
+
+.MuiSvgIcon-root{
+    font-size: 30px !important;
+}
+
+/* .MuiStepConnector-root{
+    background-color: purple !important;
+} */

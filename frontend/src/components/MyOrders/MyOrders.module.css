@@ -1,0 +1,87 @@
+.outerContainer {
+  width: 100%;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  min-height: 80vh;
+
+  > .headingBox {
+    width: 90%;
+    text-align: center;
+    margin: 20px 0;
+    > .heading {
+      font-size: 45px;
+      font-weight: 400;
+      font-family: var(--heading-font-1);
+      color: var(--button-color-2-hover);
+      text-align: center;
+    }
+  }
+  > .horizontalLine {
+    height: 3px;
+    width: 60%;
+    background-color: rgb(75, 75, 75);
+    margin-bottom: 30px;
+  }
+
+  > .myOrdersBox {
+    background-color: rgb(247, 247, 247);
+
+    display: flex;
+    min-height: 60vh;
+    position: relative;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    width: 95%;
+    max-width: 1600px;
+    > .ordersTable {
+      /* display: flex;
+      flex-direction: column; */
+      /* width: 100%; */
+      margin: 20px 1vw;
+      /* border: 1px solid green; */
+    }
+
+    > .subheadingContainer {
+      /* width: 90%; */
+      margin: 20px 0;
+      margin-bottom: 0;
+      background-color: rgb(90, 90, 90);
+      border: 2px solid gray;
+
+      > .subheading {
+        font-size: 20px;
+        font-family: var(--heading-font-1);
+        font-weight: 600;
+        text-align: center;
+        color: rgb(78, 78, 78);
+        color: white;
+      }
+    }
+  }
+}
+
+.link {
+  text-decoration: none !important;
+
+  > .toOrderIcon {
+    font-size: 22px !important;
+    font-weight: 100 !important;
+    color: rgb(57, 57, 241);
+  }
+}
+
+.processing {
+  color: rgb(161, 20, 20);
+  font-size: 15px;
+  font-weight: 600;
+}
+.delivered {
+  color: green;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+

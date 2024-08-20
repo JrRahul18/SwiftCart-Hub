@@ -1,0 +1,256 @@
+.mainPage {
+  width: 100%;
+  min-height: 100vh;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  > .outerContainer {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 10vh; */
+    margin-top: 150px;
+
+    > .headingBox {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+
+      > .heading {
+        font-size: 35px;
+        font-family: var(--heading-font-1);
+        color: rgb(87, 87, 87);
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+    }
+    > .horizontalLine {
+      height: 3px;
+      width: 60%;
+      background-color: rgb(75, 75, 75);
+      margin-bottom: 20px;
+    }
+    > .formBox {
+      border: 1px solid gray;
+      width: 80%;
+      min-width: 350px;
+      max-width: 800px;
+      margin: 50px 0;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* overflow: hidden; */
+      position: relative;
+      /* min-height: 500px; */
+      > .productForm {
+        /* position: absolute; */
+
+        width: 90%;
+
+        border-radius: 15px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+        background-color: rgb(248, 240, 253);
+        padding: 30px 0;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        border: 2px solid rgb(228, 228, 228);
+        /* transform:  translateY(-100%) translateX(-100vmax); */
+        .headingBox {
+          margin-bottom: 25px;
+          .heading {
+            font-family: var(--heading-font-1);
+            color: var(--button-color-2-hover);
+            font-weight: 400;
+          }
+        }
+
+        > .priceInputBox,
+        > .nameInputBox,
+        > .imageInputBox,
+        > .descriptionInputBox,
+        > .categoryInputBox,
+        > .stockInputBox,
+        > .imagePreviewBox {
+          /* border: 1px solid green; */
+          width: 80%;
+          min-width: 150px;
+
+          margin: 15px 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          > .priceIcon,
+          > .nameIcon,
+          > .descriptionIcon,
+          > .categoryIcon,
+          > .imageIcon,
+          > .stockIcon,
+          > .passwordIcon,
+          > .imagePreviewIcon {
+            font-size: 30px;
+            color: rgb(77, 77, 77);
+            /* margin-right: 8px; */
+          }
+
+          > .priceInput,
+          > .nameInput,
+          > .descriptionInput,
+          > .categoryInput,
+          > .stockInput,
+          > .imageInput {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 0 1.3vw;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid rgb(156, 151, 151);
+            background-color: transparent;
+            font-family: var(--heading-font-1);
+            &:focus {
+              border-bottom: 2px solid rgb(90, 87, 87);
+            }
+          }
+          > .descriptionInput {
+            resize: none;
+            width: 100% !important;
+            height: 80px !important;
+          }
+          > .categoryInput {
+            > .categoryOptions {
+              background-color: rgb(233, 233, 233);
+            }
+          }
+
+          > .imageInput {
+            border: none;
+            /* font-size: 14px; */
+            &:focus {
+              border: none;
+            }
+          }
+
+          > .imageInput::file-selector-button {
+            cursor: pointer;
+          }
+        }
+        /* 
+          >.imageInputBox{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              border: 1px solid green;
+          } */
+        > .imagePreviewBox {
+          align-items: flex-start !important;
+          > .imagePreviewIcon {
+            margin-top: 10px;
+          }
+          > .imageBox {
+            margin-left: 10px;
+            min-height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            border: 2px solid rgb(182, 182, 182);
+
+            > p {
+              color: rgb(153, 153, 153);
+              font-family: var(--heading-font-1);
+              font-weight: 500;
+            }
+            > .image {
+              width: 90px;
+              height: 90px;
+              object-fit: contain;
+              background-color: rgb(235, 235, 235);
+              margin: 8px 10px;
+              border-radius: 3px;
+              border: 1px solid rgb(216, 216, 216);
+            }
+          }
+        }
+        .createProductButtonBox {
+          .createProductButton {
+            /* background-color: ; */
+            background-color: var(--button-color);
+            color: white;
+            height: 40px;
+            font-size: 15px;
+            width: 250px;
+            border: none;
+            border-radius: 40px;
+            transition: 200ms ease-in-out;
+            cursor: pointer;
+            margin: 10px 0;
+            &:hover {
+              background-color: var(--button-color-hover);
+            }
+          }
+        }
+        > .forgetPasswordBox {
+          /* border: 2px solid green; */
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide spinners in Firefox */
+/* input[type='number'] {
+  -moz-appearance: textfield;
+} */
+
+@media screen and (max-width: 600px) {
+  .mainPage {
+    > .outerContainer {
+      > .formBox {
+        width: 100%;
+        box-sizing: border-box;
+        > .productForm {
+          width: 95%;
+
+          > .priceInputBox,
+          > .nameInputBox,
+          > .imageInputBox,
+          > .descriptionInputBox,
+          > .categoryInputBox,
+          > .stockInputBox,
+          > .imagePreviewBox {
+            margin: 10px 0;
+          }
+
+          > .imagePreviewBox {
+            > .imageBox {
+              min-height: 80px;
+              > .image {
+                width: 70px;
+                height: 70px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

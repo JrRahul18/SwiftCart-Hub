@@ -1,0 +1,215 @@
+.outerBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+.navbar {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100vw; */
+  flex-wrap: wrap;
+  height: 4.2rem;
+}
+.hamburgerIcon {
+  font-size: 40px;
+}
+.logoBox {
+  display: none;
+}
+.logoBox:active {
+  .hamburgerIcon {
+    transform: rotate(90deg);
+    transition: ease-in 100ms;
+  }
+}
+
+.sidebarHam {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.712);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  position: fixed;
+  height: 100vh;
+  width: 350px;
+  top: 0;
+  right: 0;
+  transition: ease-in-out 150ms;
+}
+.logoNew {
+  font-size: 2rem;
+}
+.crossIcon {
+  font-size: 2.5rem;
+  /* margin-left: 2rem; */
+  /* padding: 0 2rem; */
+  margin-bottom: 3rem;
+  cursor: pointer;
+  /* border: 2px solid black; */
+  /* z-index: 999; */
+}
+.navUlNew {
+  margin-top: 2rem;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  > li {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    /* border: 2px solid black; */
+  }
+  > li > .sidebarLink {
+    height: 100%;
+    padding-left: 2rem;
+    /* width: 100%; */
+    padding: 1rem 2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+  }
+  > li:hover {
+    background-color: rgb(204, 204, 204);
+    transition: ease-in-out 400ms;
+  }
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid black; */
+  /* width: 100%; */
+
+  padding-left: 2vw;
+}
+.searchInputBox {
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid black; */
+  > input {
+    height: 40px;
+    width: 30vw;
+    min-width: 200px;
+    font-size: 1.2rem;
+    padding: 2px 0;
+    padding-left: 15px;
+    /* border-radius: 20px; */
+    /* border: none; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    border: 2.5px solid rgb(189, 188, 188);
+    margin-right: -2px;
+  }
+  > .searchButton {
+    position: relative;
+    height: 40px;
+    border: none;
+    width: 4rem;
+    background-color: rgb(79, 79, 180);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    > .searchIcon {
+      height: 100%;
+      /* width: 100%; */
+      color: white;
+      font-size: 1.5rem;
+
+      /* border: 2.5px solid transparent; */
+      /* background-color: rgb(79, 79, 180); */
+    }
+    &:hover::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background-color: rgba(86, 86, 173, 0.404);
+    }
+  }
+}
+.searchInputSidebar{
+  width: 90% !important;
+}
+.navUl {
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* border: 2px solid black; */
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.navUl > li {
+  height: 100%;
+}
+/* .navUl >li:first-child{
+    margin-right: auto;
+} */
+.navUl > li > .link {
+  height: 100%;
+  padding: 0 1vw;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+}
+.navUl > li > .link:hover {
+  background-color: rgb(204, 204, 204);
+  transition: ease-in-out 400ms;
+}
+
+.profileLink .profileIcon{
+  font-size: 25px;
+}
+@media (max-width: 900px) {
+  .navbarDisplay {
+    display: none;
+  }
+  .logoBox {
+    display: flex;
+  }
+}
+@media (max-width: 450px) {
+  .navbar {
+    min-height: 4.8rem;
+  }
+  .sidebarHam {
+    width: 100vw;
+  }
+  .searchInputBox {
+    > input {
+      font-size: 14px;
+    }
+  }
+}

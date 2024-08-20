@@ -1,0 +1,7 @@
+.ratingStars .rating-empty-star {
+  color: #e2e2e2d7; /* Color of the empty stars */
+}
+
+.ratingStars .rating-filled-star {
+  color: #000000 !important; /* Color of the filled stars */
+}

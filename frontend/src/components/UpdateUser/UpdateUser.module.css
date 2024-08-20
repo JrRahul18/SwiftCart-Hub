@@ -1,0 +1,160 @@
+.mainPage {
+  width: 100%;
+  min-height: 100vh;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+
+  .outerContainer {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+
+    > .headingBox {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+
+      > .heading {
+        font-size: 35px;
+        font-family: var(--heading-font-1);
+        color: rgb(87, 87, 87);
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+    }
+    > .horizontalLine {
+      height: 3px;
+      width: 60%;
+      background-color: rgb(75, 75, 75);
+      margin-bottom: 30px;
+    }
+
+    > .updateUserBox {
+      border: 1px solid gray;
+      width: 80%;
+      min-width: 350px;
+      max-width: 800px;
+      margin: 50px 0;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* overflow: hidden; */
+      position: relative;
+      /* min-height: 500px; */
+      > .updateUserForm {
+        /* position: absolute; */
+
+        width: 90%;
+
+        border-radius: 15px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+        background-color: rgb(248, 240, 253);
+        padding: 30px 0;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        border: 2px solid rgb(228, 228, 228);
+        /* transform:  translateY(-100%) translateX(-100vmax); */
+        .headingBox {
+          margin-bottom: 25px;
+          .heading {
+            font-family: var(--heading-font-1);
+            color: var(--button-color-2-hover);
+            font-weight: 400;
+          }
+        }
+
+        > .emailInputBox,
+        > .nameInputBox,
+        > .roleInputBox {
+          /* border: 1px solid green; */
+          width: 80%;
+          min-width: 150px;
+
+          margin: 15px 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          > .emailIcon,
+          > .nameIcon,
+          > .roleIcon {
+            font-size: 30px;
+            color: rgb(77, 77, 77);
+            /* margin-right: 8px; */
+          }
+
+          > .emailInput,
+          > .nameInput,
+          > .roleInput {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 0 1.3vw;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid rgb(156, 151, 151);
+            background-color: transparent;
+            font-family: var(--heading-font-1);
+            &:focus {
+              border-bottom: 2px solid rgb(90, 87, 87);
+            }
+          }
+          > .roleInput {
+            > .roleOptions {
+              background-color: rgb(233, 233, 233);
+            }
+          }
+        }
+        .updateUserButtonBox {
+          .updateUserButton {
+            /* background-color: ; */
+            background-color: var(--button-color);
+            color: white;
+            height: 40px;
+            font-size: 15px;
+            width: 250px;
+            border: none;
+            border-radius: 40px;
+            transition: 200ms ease-in-out;
+            cursor: pointer;
+            margin: 10px 0;
+            &:hover {
+              background-color: var(--button-color-hover);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainPage {
+    > .outerContainer {
+      > .updateUserBox {
+        width: 100%;
+        box-sizing: border-box;
+        > .updateUserForm {
+          width: 95%;
+
+          > .emailInputBox,
+          > .nameInputBox,
+          > .roleInputBox {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
