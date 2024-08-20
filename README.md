@@ -21,6 +21,9 @@ SwiftCart Hub is a full-stack eCommerce application built with Vite, React.js, N
 - Express.js
 - MongoDB 
 
+**Third Party Services**:
+- Cloudinary
+
 ## Installation
 ### Prerequisites
 Make sure you have the following installed:
