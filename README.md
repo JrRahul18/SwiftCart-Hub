@@ -78,3 +78,38 @@ Create a `.env` file in the `backend` folder and add values accordingly the foll
 ### Homepage
 
 ![homepage](./frontend/src/assets/screenshots/Homepage.png)
+
+### Products
+![products](./frontend/src/assets/screenshots/Products.png)
+
+### Product Details
+![productDetails](./frontend/src/assets/screenshots/ProductDetails.png)
+
+### Contact Us
+![contactUs](./frontend/src/assets/screenshots/ContactUs.png)
+
+### User Orders
+![userOrders](./frontend/src/assets/screenshots/Orders.png)
+
+### User Cart
+![userCart](./frontend/src/assets/screenshots/Cart.png)
+
+### Profile Page
+![userProfile](./frontend/src/assets/screenshots/Profile.png)
+
+### Admin Dashboard
+![adminDashboard](./frontend/src/assets/screenshots/AdminDashboard.png)
+
+### Admin Products List
+![adminAllProducts](./frontend/src/assets/screenshots/AdminProducts.png)
+
+
+### Admin Users List
+![adminAllUsers](./frontend/src/assets/screenshots/AdminUsers.png)
+
+### Admin Reviews List
+![adminAllReviews](./frontend/src/assets/screenshots/AdminReviews.png)
+
+
+
+
