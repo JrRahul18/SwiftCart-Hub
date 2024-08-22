@@ -77,4 +77,4 @@ Create a `.env` file in the `backend` folder and add values accordingly the foll
 
 ### Homepage
 
-![homepage] (./frontend/src/assets/screenshots/Homepage.png)
+![homepage](./frontend/src/assets/screenshots/Homepage.png)
