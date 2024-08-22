@@ -183,7 +183,7 @@ const AdminReviews = () => {
               onSubmit={productReviewSubmitHandler}
             >
               <div className={styles.headingBox}>
-                <h2 className={styles.heading}>Update User Information</h2>
+                <h2 className={styles.heading}>Add Product ID</h2>
               </div>
 
               <div className={styles.productIdInputBox}>
