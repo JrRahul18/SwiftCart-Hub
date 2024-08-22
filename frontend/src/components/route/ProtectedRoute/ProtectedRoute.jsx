@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const ProtectedRoute = ({isAdmin, children }) => {
   const navigate = useNavigate();
-  console.log("entered in protectedROute")
+  // console.log("entered in protectedROute")
   const { user, loading, isAuthenticated } = useSelector(
     (store) => store.userCombine.userReducer
   );

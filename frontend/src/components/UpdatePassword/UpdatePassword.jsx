@@ -49,7 +49,7 @@ const UpdatePassword = () => {
   useEffect(() => {
     //   console.log("ERROR: ", error, "Loading: ", loading, "isAuthenticated", isAuthenticated)
     if (error) {
-      console.log("Password eror: ", error)
+      // console.log("Password eror: ", error)
       toast.error(error, {
         position: "top-center",
         autoClose: 3000,
@@ -65,7 +65,7 @@ const UpdatePassword = () => {
       // dispatch(loginClearErrors())
     }
     if (isUpdated) {
-      console.log("Notification");
+      // console.log("Notification");
       toast.success("Password Changed Successfully", {
         position: "top-center",
         autoClose: 3000,

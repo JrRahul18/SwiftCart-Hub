@@ -62,11 +62,11 @@ export const getLogin = (email, password) => async (dispatch) => {
       email,
       password,
     }, config)).data;
-    console.log("LOGIN DATA from action: ", data)
+    // console.log("LOGIN DATA from action: ", data)
 
     dispatch(LOGIN_SUCCESS(data.user))
   } catch (error) {
-    console.log("error action: ", error)
+    // console.log("error action: ", error)
     dispatch(LOGIN_FAIL(error.response.data.message));
   }
 };
@@ -78,15 +78,15 @@ export const loginClearErrors = () => async(dispatch) =>{
 export const getRegister = (userData) => async (dispatch) =>{
   try {
     dispatch(REGISTER_REQUEST());
-    console.log("UserDATA (from action): ", userData)
+    // console.log("UserDATA (from action): ", userData)
     const config = {headers: {"Content-Type": "multipart/form-data"}, withCredentials: true}
 
     const data = (await axios.post("http://localhost:4000/api/v1/register", userData, config)).data;
-    console.log("REGISTER DATA from action: ", data)
+    // console.log("REGISTER DATA from action: ", data)
 
     dispatch(REGISTER_SUCCESS(data.user))
   } catch (error) {
-    console.log("error action: ", error)
+    // console.log("error action: ", error)
     dispatch(REGISTER_FAIL(error.response.data.message));
   }
 }
@@ -121,7 +121,7 @@ export const getLogout = () => async (dispatch) => {
 
     dispatch(LOGOUT_SUCCESS())
   } catch (error) {
-    console.log("error action: ", error)
+    // console.log("error action: ", error)
     dispatch(LOGOUT_FAIL(error.response.data.message));
   }
 }
@@ -132,15 +132,15 @@ dispatch(LOGOUT_CLEAR_ERRORS())
 export const putUpdateProfile = (userData) => async (dispatch) =>{
   try {
     dispatch(UPDATE_REQUEST());
-    console.log("UpdateDATA input (from action): ", userData)
+    // console.log("UpdateDATA input (from action): ", userData)
     const config = {headers: {"Content-Type": "multipart/form-data"}, withCredentials: true}
 
     const data = (await axios.put("http://localhost:4000/api/v1/my-account/update-profile", userData, config)).data;
-    console.log("UpdateDATA from action: ", data)
+    // console.log("UpdateDATA from action: ", data)
 
     dispatch(UPDATE_SUCCESS(data.success))
   } catch (error) {
-    console.log("updateError action: ", error)
+    // console.log("updateError action: ", error)
     dispatch(UPDATE_FAIL(error.response.data.message));
   }
 }
@@ -152,15 +152,15 @@ export const updateProfileClearErrors = () => async(dispatch)=>{
 export const putUpdatePassword = (password) => async (dispatch) =>{
   try {
     dispatch(UPDATE_PASSWORD_REQUEST());
-    console.log("UpdatePassword input (from action): ", password)
+    // console.log("UpdatePassword input (from action): ", password)
     const config = {headers: {"Content-Type": "application/json"}, withCredentials: true}
 
     const data = (await axios.put("http://localhost:4000/api/v1//password/change-password", password, config)).data;
-    console.log("UpdatePassword from action: ", data)
+    // console.log("UpdatePassword from action: ", data)
 
     dispatch(UPDATE_PASSWORD_SUCCESS(data.success))
   } catch (error) {
-    console.log("updateError action: ", error)
+    // console.log("updateError action: ", error)
     dispatch(UPDATE_PASSWORD_FAIL(error.response.data.message));
   }
 }
@@ -177,11 +177,11 @@ export const postForgotPassword = (email) => async (dispatch) => {
     const config = {headers: {"Content-Type": "application/json"}, withCredentials: true}
 
     const data = (await axios.post("http://localhost:4000/api/v1/password/forget-password", email, config)).data;
-    console.log("Forgot Password DATA from action: ", data)
+    // console.log("Forgot Password DATA from action: ", data)
 
     dispatch(FORGOT_PASSWORD_SUCCESS(data.message))
   } catch (error) {
-    console.log("error action: ", error)
+    // console.log("error action: ", error)
     dispatch(FORGOT_PASSWORD_FAIL(error.response.data.message));
   }
 };
@@ -198,11 +198,11 @@ export const putResetPassword = (token, password) => async (dispatch) => {
     const config = {headers: {"Content-Type": "application/json"}, withCredentials: true}
 
     const data = (await axios.put(`http://localhost:4000/api/v1/password/reset/${token}`, password, config)).data;
-    console.log("Reset Password DATA from action: ", data)
+    // console.log("Reset Password DATA from action: ", data)
 
     dispatch(RESET_PASSWORD_SUCCESS(data.success))
   } catch (error) {
-    console.log("error action: ", error)
+    // console.log("error action: ", error)
     dispatch(RESET_PASSWORD_FAIL(error.response.data.message));
   }
 };

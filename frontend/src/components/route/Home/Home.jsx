@@ -9,6 +9,7 @@ import {ToastContainer, toast, Bounce} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import bannerBackground from "./swiftCart_bg.jpg";
 import ProductCard from "../../layouts/ProductCard/ProductCard";
+import logo from "./logo.png"
 // import { useAlert } from "react-alert";
 
 const Home = () => {
@@ -56,6 +57,10 @@ const Home = () => {
 
         <div className={styles.outerContainer}>
           <div className={styles.mainBanner}>
+            <div className={styles.logoBox}>
+            <img className={styles.logo} src={logo} alt="" />
+
+            </div>
             <h1>Welcome to SwiftCart Hub</h1>
             <h3>Find Products Below</h3>
 

@@ -73,3 +73,8 @@ Create a `.env` file in the `backend` folder and add values accordingly the foll
 
 
 
+## Screenshots
+
+### Homepage
+
+![homepage] (./frontend/src/assets/screenshots/Homepage.png)

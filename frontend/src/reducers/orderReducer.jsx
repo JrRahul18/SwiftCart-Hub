@@ -9,7 +9,7 @@ export const newOrderReducer = createSlice({
       return { ...state, loading: true };
     },
     CREATE_ORDER_SUCCESS: (state, action) => {
-      console.log("action payload: ", action.payload);
+      // console.log("action payload: ", action.payload);
       return { loading: false, order: action.payload };
     },
     CREATE_ORDER_FAIL: (state, action) => {
@@ -29,7 +29,7 @@ export const myOrdersReducer = createSlice({
       return { loading: true };
     },
     MY_ORDERS_SUCCESS: (state, action) => {
-      console.log("myOrdersaction payload: ", action.payload);
+      // console.log("myOrdersaction payload: ", action.payload);
       return { loading: false, orders: action.payload };
     },
     MY_ORDERS_FAIL: (state, action) => {
@@ -49,7 +49,7 @@ export const orderDetailsReducer = createSlice({
       return { loading: true };
     },
     ORDER_DETAILS_SUCCESS: (state, action) => {
-      console.log("OrderDetailsaction payload: ", action.payload);
+      // console.log("OrderDetailsaction payload: ", action.payload);
       return { loading: false, order: action.payload };
     },
     ORDER_DETAILS_FAIL: (state, action) => {
@@ -69,7 +69,7 @@ export const allOrdersReducer = createSlice({
       return { loading: true };
     },
     ADMIN_ALL_ORDERS_SUCCESS: (state, action) => {
-      console.log("adminAllOrdersAction payload: ", action.payload);
+      // console.log("adminAllOrdersAction payload: ", action.payload);
       return { loading: false, orders: action.payload.allOrders, totalAmount: action.payload.totalAmount };
     },
     ADMIN_ALL_ORDERS_FAIL: (state, action) => {
@@ -89,7 +89,7 @@ export const orderReducer = createSlice({
       return { ...state, loading: true };
     },
     UPDATE_ORDER_SUCCESS: (state, action) => {
-      console.log("updateOrderAction payload: ", action.payload);
+      // console.log("updateOrderAction payload: ", action.payload);
       return { ...state, loading: false, isUpdated: action.payload };
     },
     UPDATE_ORDER_FAIL: (state, action) => {
@@ -106,7 +106,7 @@ export const orderReducer = createSlice({
       return { ...state, loading: true };
     },
     DELETE_ORDER_SUCCESS: (state, action) => {
-      console.log("updateOrderAction payload: ", action.payload);
+      // console.log("updateOrderAction payload: ", action.payload);
       return { ...state, loading: false, isDeleted: action.payload };
     },
     DELETE_ORDER_FAIL: (state, action) => {

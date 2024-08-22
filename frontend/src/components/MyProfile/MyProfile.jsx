@@ -9,7 +9,7 @@ import Loading from '../layouts/LoadingPage/Loading'
 const MyProfile = () => {
   const navigate= useNavigate();
   const {user, loading, isAuthenticated} = useSelector(store=>store.userCombine.userReducer)
-  console.log(user);
+  // console.log(user);
   const date = new Date(user.createdAt);
   const day = date.getDate();
   const month = date.toLocaleString('default', { month: 'short' });

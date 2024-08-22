@@ -37,7 +37,19 @@
   text-decoration: none;
   z-index: 1;
 }
-
+.mainBanner >.logoBox{
+  z-index: 1;
+  /* border: 1px solid green; */
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.178);
+}
+.mainBanner >.logoBox > .logo{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 20px;
+  z-index: 1;
+}
 .mainBanner > a > button {
   font-size: 1.4rem;
   padding: 20px 10px;

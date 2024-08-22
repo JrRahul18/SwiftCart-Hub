@@ -1,7 +1,7 @@
 .mainPage {
   width: 100%;
   min-height: 100vh;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: row;
 
@@ -30,11 +30,11 @@
     > .horizontalLine {
       height: 3px;
       width: 60%;
-      background-color: rgb(75, 75, 75);
+      background-color: rgb(12, 9, 9);
       margin-bottom: 30px;
     }
     > .updateReviewsBox {
-      border: 1px solid gray;
+      /* border: 1px solid gray; */
       width: 80%;
       min-width: 350px;
       max-width: 800px;

@@ -79,8 +79,8 @@ const Login = () => {
     newForm.set("email", user.email);
     newForm.set("password", user.password);
     newForm.set("profileImage", profileImage);
-    console.log("SIGNUP USER STATE: ", user);
-    console.log("SIGNUP FORM: ", newForm);
+    // console.log("SIGNUP USER STATE: ", user);
+    // console.log("SIGNUP FORM: ", newForm);
     dispatch(getRegister(newForm));
   };
 
@@ -111,14 +111,14 @@ const Login = () => {
   // const redirect = location.search ? new URLSearchParams(location.search).get('redirect') : "my-account"
 
   useEffect(() => {
-    console.log(
-      "ERROR: ",
-      error,
-      "Loading: ",
-      loading,
-      "isAuthenticated",
-      isAuthenticated
-    );
+    // console.log(
+    //   "ERROR: ",
+    //   error,
+    //   "Loading: ",
+    //   loading,
+    //   "isAuthenticated",
+    //   isAuthenticated
+    // );
     if (error) {
       toast.error(error, {
         position: "top-center",
@@ -134,7 +134,7 @@ const Login = () => {
       // dispatch(loginClearErrors())
     }
     if (isAuthenticated === true) {
-      console.log("Logged In successfully");
+      // console.log("Logged In successfully");
       toast.success("Logged In Successfully", {
         position: "top-center",
         autoClose: 3000,

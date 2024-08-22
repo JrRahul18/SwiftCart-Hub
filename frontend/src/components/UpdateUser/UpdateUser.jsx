@@ -39,7 +39,7 @@ const UpdateUser = () => {
 
   useEffect(() => {
     if (user && user._id !== myParams.id) {
-      console.log("userid: ", user._id, "myParamsid: ", myParams.id);
+      // console.log("userid: ", user._id, "myParamsid: ", myParams.id);
       dispatch(getUserDetails(myParams.id));
     } else {
       setUpdatedName(user.name);

@@ -115,7 +115,7 @@ const AdminReviews = () => {
 
   useEffect(() => {
     if (error) {
-      console.log("error: ", error);
+      // console.log("error: ", error);
       toast.error(error, {
         position: "top-center",
         autoClose: 2500,

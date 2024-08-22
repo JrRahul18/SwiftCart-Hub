@@ -36,7 +36,7 @@ export const createOrder = (orderData) => async (dispatch) => {
 
     const data =  (await axios.post("http://localhost:4000/api/v1/order/new", orderData, config)).data
 
-    console.log("DATA from action: ", data)
+    // console.log("DATA from action: ", data)
 
     dispatch(CREATE_ORDER_SUCCESS(data));
 
@@ -60,7 +60,7 @@ export const getMyOrders = () => async (dispatch) => {
 
     const data =  (await axios.get("http://localhost:4000/api/v1/orders/me",  config)).data
 
-    console.log("getMyOrdersData from action: ", data)
+    // console.log("getMyOrdersData from action: ", data)
 
     dispatch(MY_ORDERS_SUCCESS(data.myOrders));
 
@@ -83,7 +83,7 @@ export const getOrderDetails = (id) => async (dispatch) => {
 
     const data =  (await axios.get(`http://localhost:4000/api/v1/order/${id}`,  config)).data
 
-    console.log("getMyOrdersData from action: ", data)
+    // console.log("getMyOrdersData from action: ", data)
 
     dispatch(ORDER_DETAILS_SUCCESS(data.order));
 
@@ -107,7 +107,7 @@ export const getAdminOrders = () => async (dispatch) => {
 
     const data =  (await axios.get("http://localhost:4000/api/v1/admin/orders",  config)).data
 
-    console.log("getAdminOrdersData from action: ", data)
+    // console.log("getAdminOrdersData from action: ", data)
 
     dispatch(ADMIN_ALL_ORDERS_SUCCESS(data));
 
@@ -129,7 +129,7 @@ export const putUpdateOrder = (orderId, orderData) => async (dispatch) => {
 
     const data =  (await axios.put(`http://localhost:4000/api/v1/admin/order/${orderId}`, orderData, config)).data
 
-    console.log("DATA from action: ", data)
+    // console.log("DATA from action: ", data)
 
     dispatch(UPDATE_ORDER_SUCCESS(data.success));
 
@@ -152,7 +152,7 @@ export const deleteOrder = (orderId) => async (dispatch) => {
 
     const data =  (await axios.delete(`http://localhost:4000/api/v1/admin/order/${orderId}`,  config)).data
 
-    console.log("DATA from action: ", data)
+    // console.log("DATA from action: ", data)
 
     dispatch(DELETE_ORDER_SUCCESS(data.success));
 

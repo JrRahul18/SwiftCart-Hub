@@ -72,7 +72,7 @@ const NewProduct = () => {
     }
 
     if (success) {
-      toast.success("product added succesfully", {
+      toast.success("Product Added Succesfully", {
         position: "top-center",
         autoClose: 2500,
         hideProgressBar: false,
@@ -84,7 +84,7 @@ const NewProduct = () => {
         transition: Bounce,
       });
       dispatch(NEW_PRODUCT_RESET());
-      navigate("/admin/dashboard?success=true");
+      navigate("/admin/products");
     }
   }, [dispatch, toast, error, navigate, success]);
 

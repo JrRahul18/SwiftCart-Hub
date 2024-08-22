@@ -39,22 +39,22 @@ const AdminProducts = () => {
       field: "id",
       headerName: "Product Id",
       minWidth: 230,
-      flex: 0.6,
+      flex: 0.2,
       cellClassName: `${styles.idColumn}`,
     },
     {
       field: "name",
       headerName: "Name",
-      minWidth: 230,
-      flex: 0.6,
+      minWidth: 300,
+      flex: 1.3,
       cellClassName: `${styles.nameColumn}`,
     },
     {
       field: "stock",
       headerName: "Stock",
       type: "number",
-      minWidth: 140,
-      flex: 0.4,
+      minWidth: 100,
+      flex: 0.1,
       cellClassName: `${styles.stockColumn}`,
     },
     {
@@ -62,7 +62,7 @@ const AdminProducts = () => {
       headerName: "Price",
       type: "number",
       minWidth: 150,
-      flex: 0.4,
+      flex: 0.2,
       cellClassName: `${styles.priceColumn}`,
     },
 
@@ -71,7 +71,7 @@ const AdminProducts = () => {
       headerName: "Actions",
       type: "number",
       minWidth: 120,
-      flex: 0.3,
+      flex: 0.1,
       sortable: false,
       cellClassName: `${styles.actionsColumn}`,
       renderCell: (params) => {
@@ -142,7 +142,7 @@ const AdminProducts = () => {
     }
 
     if(isDeleted){
-      toast.success("Product deleted Successfully", {
+      toast.success("Product Deleted Successfully", {
         position: "top-center",
         autoClose: 2500,
         hideProgressBar: false,
@@ -154,7 +154,7 @@ const AdminProducts = () => {
         transition: Bounce,
       });
       dispatch(DELETE_PRODUCT_RESET());
-      navigate("/admin/dashboard?deletesuccess=true")
+      // navigate("/admin/dashboard?deletesuccess=true")
 
     }
 

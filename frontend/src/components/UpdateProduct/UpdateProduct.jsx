@@ -68,7 +68,7 @@ const UpdateProduct = () => {
 
   useEffect(() => {
     if (product && product._id !== params.id) {
-      console.log("productid: ", product._id, "paramsid: ", params.id);
+      // console.log("productid: ", product._id, "paramsid: ", params.id);
       dispatch(getProductDetails(params));
     } else {
       setName(product.name);
@@ -139,7 +139,7 @@ const UpdateProduct = () => {
     productImageArray.forEach((image) => {
       newForm.append("image", image);
     });
-    console.log("imageArray length: ", productImageArray.length);
+    // console.log("imageArray length: ", productImageArray.length);
 
     dispatch(putUpdateProduct(params.id, newForm));
   };

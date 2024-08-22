@@ -27,7 +27,7 @@ const UpdateOrder = () => {
   const dispatch = useDispatch();
 
   const [updateStatus, setUpdateStatus] = useState("");
-  console.log("updateStatus", updateStatus);
+  // console.log("updateStatus", updateStatus);
 
   const navigate = useNavigate();
   const { order, error, loading } = useSelector(

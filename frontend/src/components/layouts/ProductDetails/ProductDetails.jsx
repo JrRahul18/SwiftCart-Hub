@@ -65,7 +65,7 @@ const ProductDetails = ({match}) => {
     }
 
     if(success){
-      console.log("success true")
+      // console.log("success true")
       toast.success("Review added Succesfully", {
         position: "top-center",
         autoClose: 3000,
@@ -115,7 +115,7 @@ const ProductDetails = ({match}) => {
   const submitReviewHandler = () =>{
     // console.log("enteredsubmit")
     if(reviewComment.trim().length === 0){
-      console.log("Enter Something")
+      // console.log("Enter Something")
       toast.error("Enter Valid Review", {
         position: "top-center",
         autoClose: 3000,

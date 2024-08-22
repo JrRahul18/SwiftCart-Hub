@@ -39,7 +39,7 @@ const UpdateProfile = () => {
     newForm.set("email", email);
     newForm.set("profileImage", profileImage);
     // console.log("SIGNUP USER STATE: ", userData)
-    console.log("Update Form: ", newForm);
+    // console.log("Update Form: ", newForm);
     dispatch(putUpdateProfile(newForm));
   };
 
@@ -79,7 +79,7 @@ const UpdateProfile = () => {
       // dispatch(loginClearErrors())
     }
     if (isUpdated) {
-      console.log("Notification")
+      // console.log("Notification")
       toast.success("Profile Updated Successfully", {
         position: "top-center",
         autoClose: 3000,

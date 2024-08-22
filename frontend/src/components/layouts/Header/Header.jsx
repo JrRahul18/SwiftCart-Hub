@@ -8,6 +8,7 @@ import { FaSearch } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import logo from "./logo.png"
 
 
 
@@ -22,17 +23,17 @@ const Header = () => {
   const [keyword, setKeyword] = useState("");
   const showSidebar = () =>{
     setSidebar((prevState) => !prevState);
-    console.log(sidebar)
+    // console.log(sidebar)
   }
 
   const inputChangeHandler =(event) =>{
     setKeyword(event.target.value)
-    console.log(keyword)
+    // console.log(keyword)
 
   }
   const searchSubmitHandler = (event) =>{
     event.preventDefault();
-    console.log(keyword)
+    // console.log(keyword)
     if(keyword.trim()){
       navigate(`/products/${keyword}`)
     }
@@ -44,7 +45,7 @@ const Header = () => {
     <div id="navbar" className={styles.outerBox}>
         <nav className={styles.sidebarHam} style={{ right: sidebar ? "0" : "-100%" }}>
             <ul><IoCloseSharp onClick={showSidebar} className={styles.crossIcon}/></ul>
-            <ul className={styles.logoNew}>LOGO</ul>
+            <ul className={styles.logoNew}> <Link className={styles.sidebarLink} to={'/'}> <img className={styles.sidebarLogo} src={logo} alt="" /></Link> </ul>
             <ul className={styles.navUlNew}>
             <form action="" onSubmit={searchSubmitHandler}>
               <div className={`${styles.searchInputBox} ${styles.searchInputSidebar}`}>
@@ -63,7 +64,7 @@ const Header = () => {
             </ul>
         </nav>
         <nav className={styles.navbar}>
-            <ul className={styles.logo}>LOGO</ul>
+            <ul className={styles.logo}> <Link className={styles.link} to={'/'}> <img className={styles.homeLogo} src={logo} alt="" /> </Link> </ul>
             <form action="" onSubmit={searchSubmitHandler}>
               <div className={styles.searchInputBox}>
                 <input type="text" placeholder="Search a Product" onChange={inputChangeHandler} />

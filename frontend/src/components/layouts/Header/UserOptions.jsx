@@ -64,7 +64,7 @@ const UserOptions = (props) => {
     }
 
     dispatch(getLogout());
-    console.log("userDataFromReducer: ", userDataFromReducer);
+    // console.log("userDataFromReducer: ", userDataFromReducer);
   };
 
 

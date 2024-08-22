@@ -70,7 +70,7 @@ export const productDetailsReducer = createSlice({
 
     PRODUCT_DETAILS_SUCCESS: (state, action) => {
       const extractProduct = action.payload.product;
-      console.log("Payload(ProductDetails): ", extractProduct);
+      // console.log("Payload(ProductDetails): ", extractProduct);
       return { loading: false, product: extractProduct };
     },
 
@@ -187,12 +187,12 @@ export const productReviewsReducer = createSlice({
     },
 
     ADMIN_ALL_REVIEWS_SUCCESS: (state, action) => {
-      console.log("ADMIN ALL REVIEWS SUCCESS: ", action.payload);
+      // console.log("ADMIN ALL REVIEWS SUCCESS: ", action.payload);
       return { loading: false, reviews: action.payload };
     },
 
     ADMIN_ALL_REVIEWS_FAIL: (state, action) => {
-      console.log("ADMIN ALL REVIEWS FAIL: ", action.payload);
+      // console.log("ADMIN ALL REVIEWS FAIL: ", action.payload);
       return { ...state, loading: false, error: action.payload };
     },
 
@@ -211,12 +211,12 @@ export const reviewReducer = createSlice({
     },
 
     DELETE_REVIEW_SUCCESS: (state, action) => {
-      console.log("DELETE REVIEW SUCCESS: ", action.payload);
+      // console.log("DELETE REVIEW SUCCESS: ", action.payload);
       return { loading: false, isDeleted: action.payload };
     },
 
     DELETE_REVIEW_FAIL: (state, action) => {
-      console.log("DELETE REVIEW FAIL: ", action.payload);
+      // console.log("DELETE REVIEW FAIL: ", action.payload);
       return { ...state, loading: false, error: action.payload };
     },
     DELETE_REVIEW_RESET: (state, action) => {

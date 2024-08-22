@@ -56,7 +56,7 @@ import PageNotFound from "./components/layouts/PageNotFound/PageNotFound";
 function App() {
   // ScrollToTop();
   const{user, isAuthenticated}=useSelector((store)=> store.userCombine.userReducer);
-  console.log("USER app.jsx: ", user, " isAuthenticated: ", isAuthenticated)
+  // console.log("USER app.jsx: ", user, " isAuthenticated: ", isAuthenticated)
 
   const[stripeAPI, setStripeAPI]=useState("")
   // console.log("Stripe API Key: ", stripeAPI)

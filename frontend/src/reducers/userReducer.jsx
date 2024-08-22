@@ -29,7 +29,7 @@ export const userReducer = createSlice({
       };
     },
     LOGIN_FAIL: (state, action) => {
-      console.log("LOGIN_FAIL: ", action.payload);
+      // console.log("LOGIN_FAIL: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -55,7 +55,7 @@ export const userReducer = createSlice({
       };
     },
     REGISTER_FAIL: (state, action) => {
-      console.log("LOGIN_FAIL: ", action.payload);
+      // console.log("LOGIN_FAIL: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -111,7 +111,7 @@ export const userProfileReducer = createSlice({
       return { ...state, loading: true };
     },
     UPDATE_SUCCESS: (state, action) => {
-      console.log("UPDATE SUCCESS: ", action.payload);
+      // console.log("UPDATE SUCCESS: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -119,7 +119,7 @@ export const userProfileReducer = createSlice({
       };
     },
     UPDATE_FAIL: (state, action) => {
-      console.log("UPDATE FAIL: ", action.payload);
+      // console.log("UPDATE FAIL: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -140,7 +140,7 @@ export const userProfileReducer = createSlice({
       return { ...state, loading: true };
     },
     UPDATE_PASSWORD_SUCCESS: (state, action) => {
-      console.log("UPDATE PASSWORD SUCCESS: ", action.payload);
+      // console.log("UPDATE PASSWORD SUCCESS: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -148,7 +148,7 @@ export const userProfileReducer = createSlice({
       };
     },
     UPDATE_PASSWORD_FAIL: (state, action) => {
-      console.log("UPDATE PASSWORD FAIL: ", action.payload);
+      // console.log("UPDATE PASSWORD FAIL: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -169,7 +169,7 @@ export const userProfileReducer = createSlice({
       return { ...state, loading: true };
     },
     UPDATE_USER_SUCCESS: (state, action) => {
-      console.log("UPDATE USER SUCCESS: ", action.payload);
+      // console.log("UPDATE USER SUCCESS: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -177,7 +177,7 @@ export const userProfileReducer = createSlice({
       };
     },
     UPDATE_USER_FAIL: (state, action) => {
-      console.log("UPDATE USER FAIL: ", action.payload);
+      // console.log("UPDATE USER FAIL: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -198,7 +198,7 @@ export const userProfileReducer = createSlice({
       return { ...state, loading: true };
     },
     DELETE_USER_SUCCESS: (state, action) => {
-      console.log("DELETE USER SUCCESS: ", action.payload);
+      // console.log("DELETE USER SUCCESS: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -207,7 +207,7 @@ export const userProfileReducer = createSlice({
       };
     },
     DELETE_USER_FAIL: (state, action) => {
-      console.log("DELETE USER FAIL: ", action.payload);
+      // console.log("DELETE USER FAIL: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -234,7 +234,7 @@ export const forgotPasswordReducer = createSlice({
       return { ...state, loading: true, error: null };
     },
     FORGOT_PASSWORD_SUCCESS: (state, action) => {
-      console.log("UPDATE SUCCESS: ", action.payload);
+      // console.log("UPDATE SUCCESS: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -242,7 +242,7 @@ export const forgotPasswordReducer = createSlice({
       };
     },
     FORGOT_PASSWORD_FAIL: (state, action) => {
-      console.log("UPDATE FAIL: ", action.payload);
+      // console.log("UPDATE FAIL: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -256,7 +256,7 @@ export const forgotPasswordReducer = createSlice({
       return { ...state, loading: true, error: null };
     },
     RESET_PASSWORD_SUCCESS: (state, action) => {
-      console.log("UPDATE SUCCESS: ", action.payload);
+      // console.log("UPDATE SUCCESS: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -264,7 +264,7 @@ export const forgotPasswordReducer = createSlice({
       };
     },
     RESET_PASSWORD_FAIL: (state, action) => {
-      console.log("UPDATE FAIL: ", action.payload);
+      // console.log("UPDATE FAIL: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -285,7 +285,7 @@ export const allUsersReducer = createSlice({
       return { ...state, loading: true };
     },
     ADMIN_ALL_USERS_SUCCESS: (state, action) => {
-      console.log("ALLUSERS SUCCESS: ", action.payload);
+      // console.log("ALLUSERS SUCCESS: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -293,7 +293,7 @@ export const allUsersReducer = createSlice({
       };
     },
     ADMIN_ALL_USERS_FAIL: (state, action) => {
-      console.log("ALLUSERS FAIL: ", action.payload);
+      // console.log("ALLUSERS FAIL: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -314,7 +314,7 @@ export const userDetailsReducer = createSlice({
       return { ...state, loading: true };
     },
     USER_DETAILS_SUCCESS: (state, action) => {
-      console.log("USER DETAILS SUCCESS: ", action.payload);
+      // console.log("USER DETAILS SUCCESS: ", action.payload);
       return {
         ...state,
         loading: false,
@@ -322,7 +322,7 @@ export const userDetailsReducer = createSlice({
       };
     },
     USER_DETAILS_FAIL: (state, action) => {
-      console.log("USER DETAILS FAIL: ", action.payload);
+      // console.log("USER DETAILS FAIL: ", action.payload);
       return {
         ...state,
         loading: false,

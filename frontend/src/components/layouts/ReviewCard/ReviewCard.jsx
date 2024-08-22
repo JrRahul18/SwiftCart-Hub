@@ -13,7 +13,7 @@ const ReviewCard = ({ review }) => {
     value: review.rating,
     color: '#ffd700'
   };
-  console.log("Review Rating ",review.rating)
+  // console.log("Review Rating ",review.rating)
   return (
     <div className={styles.reviewCard}>
       <div className={styles.pfpBox}>

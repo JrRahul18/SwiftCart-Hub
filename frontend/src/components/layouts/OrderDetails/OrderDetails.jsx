@@ -20,7 +20,7 @@ const OrderDetails = () => {
   const { order, error, loading } = useSelector(
     (store) => store.orderCombine.orderDetailsReducer
   );
-  console.log("Order: ", order)
+  // console.log("Order: ", order)
 
   const address = order && order.shippingInformation ? `${order.shippingInformation.address}, ${order.shippingInformation.city}, ${order.shippingInformation.state}, ${order.shippingInformation.pinCode}, ${order.shippingInformation.country}` : '';
 

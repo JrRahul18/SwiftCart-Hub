@@ -54,7 +54,7 @@ export const getProduct = (getKeyword, currentPage, price=[0, 25000], category, 
     if(category){
       getLink = `http://localhost:4000/api/v1/products?keyword=${extractKeyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`;
     }
-    console.log("getLink: ", getLink)
+    // console.log("getLink: ", getLink)
     const data = (await axios.get(getLink, {withCredentials: true}))
       .data;
     // console.log("Data(from action): ",data)
@@ -83,7 +83,7 @@ export const adminProductsClearErrors = () =>async(dispatch) =>{
 }
 
 export const getProductDetails = ({id}) => async (dispatch) => {
-  console.log("ID From action: ",id)
+  // console.log("ID From action: ",id)
   try {
     dispatch(PRODUCT_DETAILS_REQUEST());
     const data = (
@@ -119,7 +119,7 @@ export const putNewReview = (reviewData) => async (dispatch) => {
     const data = (
       await axios.put(`http://localhost:4000/api/v1/review`, reviewData, config)
     ).data;
-    console.log("PutNewReview(from action): ",data)
+    // console.log("PutNewReview(from action): ",data)
 
     dispatch(NEW_REVIEW_SUCCESS(data.success));
   } catch (error) {
@@ -144,7 +144,7 @@ export const postNewProduct = (productData) => async (dispatch) => {
     const data = (
       await axios.post(`http://localhost:4000/api/v1/admin/product/new`, productData, config)
     ).data;
-    console.log("PostNewProduct(from action): ",data)
+    // console.log("PostNewProduct(from action): ",data)
 
     dispatch(NEW_PRODUCT_SUCCESS(data));
   } catch (error) {
@@ -167,7 +167,7 @@ export const deleteProduct = (productId) => async (dispatch) => {
     const data = (
       await axios.delete(`http://localhost:4000/api/v1/admin/product/${productId}`, config)
     ).data;
-    console.log("DeleteProduct(from action): ",data)
+    // console.log("DeleteProduct(from action): ",data)
 
     dispatch(DELETE_PRODUCT_SUCCESS(data.success));
   } catch (error) {
@@ -190,7 +190,7 @@ export const putUpdateProduct = (id, productData) => async (dispatch) => {
     const data = (
       await axios.put(`http://localhost:4000/api/v1/admin/product/${id}`, productData, config)
     ).data;
-    console.log("PutUpdateProduct(from action): ",data)
+    // console.log("PutUpdateProduct(from action): ",data)
 
     dispatch(UPDATE_PRODUCT_SUCCESS(data.success));
   } catch (error) {
@@ -238,7 +238,7 @@ export const deleteReview = (reviewId, productId) => async (dispatch) => {
     const data = (
       await axios.delete(`http://localhost:4000/api/v1/reviews?productId=${productId}&id=${reviewId}`, config)
     ).data;
-    console.log("deleteReview Action data: ", data)
+    // console.log("deleteReview Action data: ", data)
     dispatch(DELETE_REVIEW_SUCCESS(data.success));
   } catch (error) {
     dispatch(DELETE_REVIEW_FAIL(error.response.data.message));

@@ -58,7 +58,7 @@ const ForgotPassword = () => {
       // dispatch(loginClearErrors())
     }
     if (message) {
-      console.log("Notification");
+      // console.log("Notification");
       toast.success(message, {
         position: "top-center",
         autoClose: 3000,

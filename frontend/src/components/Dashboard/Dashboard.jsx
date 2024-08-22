@@ -39,9 +39,6 @@ ChartJS.register(
 
 const Dashboard = () => {
   // const myParam = useParams();
-  const query = new URLSearchParams(window.location.search);
-  const myParam = query.get("success");
-  const myParam2 = query.get("deletesuccess");
   const dispatch = useDispatch();
   const { products } = useSelector(
     (store) => store.productCombine.productsReducer
@@ -97,32 +94,6 @@ const Dashboard = () => {
 
     //   dispatch(adminProductsClearErrors());
     // }
-    if (myParam === "true") {
-      toast.success("Product Added Succesfully and routed", {
-        position: "top-center",
-        autoClose: 2500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-        transition: Bounce,
-      });
-    }
-    if (myParam2 === "true") {
-      toast.success("Product Deleted Successfully", {
-        position: "top-center",
-        autoClose: 2500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-        transition: Bounce,
-      });
-    }
 
     dispatch(getAdminProducts());
     dispatch(getAdminOrders());

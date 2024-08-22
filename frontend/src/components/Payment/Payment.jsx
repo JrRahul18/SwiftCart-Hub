@@ -99,7 +99,7 @@ const Payment = () => {
 
       if (result.error) {
         payBtn.current.disabled = false;
-        console.log("stripe.confirmCardPayment error: ", result.error);
+        // console.log("stripe.confirmCardPayment error: ", result.error);
         toast.error(result.error.message, {
           position: "top-center",
           autoClose: 2500,
@@ -135,7 +135,7 @@ const Payment = () => {
       }
     } catch (error) {
       payBtn.current.disabled = false;
-      console.log("error: ", error);
+      // console.log("error: ", error);
       toast.error(error.response.data.message, {
         position: "top-center",
         autoClose: 2500,
